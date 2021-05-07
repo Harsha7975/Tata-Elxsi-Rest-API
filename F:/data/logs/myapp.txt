@@ -1,0 +1,1257 @@
+2021-05-07 00:05:27 5746 [main] - Starting CrudDemoApplication using Java 1.8.0_202 on IXED-SJRMAC007 with PID 5746 (/Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo/target/classes started by harshavardhan.reddy in /Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo)
+2021-05-07 00:05:27 5746 [main] - No active profile set, falling back to default profiles: default
+2021-05-07 00:05:28 5746 [main] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-07 00:05:28 5746 [main] - Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interfaces.
+2021-05-07 00:05:29 5746 [main] - Tomcat initialized with port(s): 8083 (http)
+2021-05-07 00:05:29 5746 [main] - Starting service [Tomcat]
+2021-05-07 00:05:29 5746 [main] - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-07 00:05:29 5746 [main] - Initializing Spring embedded WebApplicationContext
+2021-05-07 00:05:29 5746 [main] - Root WebApplicationContext: initialization completed in 1845 ms
+2021-05-07 00:05:30 5746 [main] - HikariPool-1 - Starting...
+2021-05-07 00:05:31 5746 [main] - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLSyntaxErrorException: Unknown database 'tataelxsi'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at com.just.cruddemo.CrudDemoApplication.main(CrudDemoApplication.java:10)
+2021-05-07 00:05:32 5746 [main] - HikariPool-1 - Starting...
+2021-05-07 00:05:33 5746 [main] - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLSyntaxErrorException: Unknown database 'tataelxsi'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.jdbcStatement(GenerationTargetToDatabase.java:77)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:53)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:241)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at com.just.cruddemo.CrudDemoApplication.main(CrudDemoApplication.java:10)
+2021-05-07 00:05:33 5746 [main] - Unknown database 'tataelxsi'
+2021-05-07 00:05:33 5746 [main] - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution
+2021-05-07 00:05:33 5746 [main] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution
+2021-05-07 00:05:33 5746 [main] - Stopping service [Tomcat]
+2021-05-07 00:05:33 5746 [main] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-07 00:05:33 5746 [main] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at com.just.cruddemo.CrudDemoApplication.main(CrudDemoApplication.java:10)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 17 common frames omitted
+Caused by: org.hibernate.exception.SQLGrammarException: Unable to open JDBC Connection for DDL execution
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:63)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:69)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.jdbcStatement(GenerationTargetToDatabase.java:77)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:53)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:241)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 21 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'tataelxsi'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+	... 37 common frames omitted
+2021-05-07 00:05:39 5829 [main] - Starting CrudDemoApplication using Java 1.8.0_202 on IXED-SJRMAC007 with PID 5829 (/Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo/target/classes started by harshavardhan.reddy in /Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo)
+2021-05-07 00:05:39 5829 [main] - No active profile set, falling back to default profiles: default
+2021-05-07 00:05:40 5829 [main] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-07 00:05:40 5829 [main] - Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+2021-05-07 00:05:41 5829 [main] - Tomcat initialized with port(s): 8083 (http)
+2021-05-07 00:05:41 5829 [main] - Starting service [Tomcat]
+2021-05-07 00:05:41 5829 [main] - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-07 00:05:41 5829 [main] - Initializing Spring embedded WebApplicationContext
+2021-05-07 00:05:41 5829 [main] - Root WebApplicationContext: initialization completed in 1529 ms
+2021-05-07 00:05:41 5829 [main] - HikariPool-1 - Starting...
+2021-05-07 00:05:41 5829 [main] - HikariPool-1 - Start completed.
+2021-05-07 00:05:42 5829 [main] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 00:05:42 5829 [main] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-07 00:05:42 5829 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-07 00:05:43 5829 [main] - Tomcat started on port(s): 8083 (http) with context path ''
+2021-05-07 00:05:43 5829 [main] - Started CrudDemoApplication in 4.146 seconds (JVM running for 4.67)
+2021-05-07 00:05:49 5829 [http-nio-8083-exec-2] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-07 00:05:49 5829 [http-nio-8083-exec-2] - Initializing Servlet 'dispatcherServlet'
+2021-05-07 00:05:49 5829 [http-nio-8083-exec-2] - Completed initialization in 1 ms
+2021-05-07 00:05:49 5829 [http-nio-8083-exec-2] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 00:05:49 5829 [http-nio-8083-exec-2] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.just.cruddemo.Controller.CustomerResource.addCustomerDetails(CustomerResource.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-05-07 00:05:52 5829 [http-nio-8083-exec-3] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 00:05:52 5829 [http-nio-8083-exec-3] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.just.cruddemo.Controller.CustomerResource.addCustomerDetails(CustomerResource.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-05-07 00:05:57 5829 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-07 00:05:57 5829 [SpringContextShutdownHook] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 00:05:57 5829 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2021-05-07 00:05:57 5829 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.
+2021-05-07 00:05:19 5990 [main] - Starting CrudDemoApplication using Java 1.8.0_202 on IXED-SJRMAC007 with PID 5990 (/Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo/target/classes started by harshavardhan.reddy in /Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo)
+2021-05-07 00:05:19 5990 [main] - No active profile set, falling back to default profiles: default
+2021-05-07 00:05:20 5990 [main] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-07 00:05:20 5990 [main] - Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+2021-05-07 00:05:20 5990 [main] - Tomcat initialized with port(s): 8083 (http)
+2021-05-07 00:05:20 5990 [main] - Starting service [Tomcat]
+2021-05-07 00:05:20 5990 [main] - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-07 00:05:21 5990 [main] - Initializing Spring embedded WebApplicationContext
+2021-05-07 00:05:21 5990 [main] - Root WebApplicationContext: initialization completed in 1766 ms
+2021-05-07 00:05:21 5990 [main] - HikariPool-1 - Starting...
+2021-05-07 00:05:22 5990 [main] - HikariPool-1 - Start completed.
+2021-05-07 00:05:22 5990 [main] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 00:05:23 5990 [main] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-07 00:05:23 5990 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-07 00:05:23 5990 [main] - Tomcat started on port(s): 8083 (http) with context path ''
+2021-05-07 00:05:23 5990 [main] - Started CrudDemoApplication in 5.162 seconds (JVM running for 5.945)
+2021-05-07 00:05:08 5990 [http-nio-8083-exec-1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-07 00:05:08 5990 [http-nio-8083-exec-1] - Initializing Servlet 'dispatcherServlet'
+2021-05-07 00:05:08 5990 [http-nio-8083-exec-1] - Completed initialization in 2 ms
+2021-05-07 00:05:08 5990 [http-nio-8083-exec-1] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 00:05:08 5990 [http-nio-8083-exec-1] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.just.cruddemo.Controller.CustomerResource.addCustomerDetails(CustomerResource.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-05-07 00:05:39 5990 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-07 00:05:39 5990 [SpringContextShutdownHook] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 00:05:39 5990 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2021-05-07 00:05:39 5990 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.
+2021-05-07 00:05:48 6035 [main] - Starting CrudDemoApplication using Java 1.8.0_202 on IXED-SJRMAC007 with PID 6035 (/Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo/target/classes started by harshavardhan.reddy in /Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo)
+2021-05-07 00:05:48 6035 [main] - No active profile set, falling back to default profiles: default
+2021-05-07 00:05:49 6035 [main] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-07 00:05:49 6035 [main] - Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2021-05-07 00:05:49 6035 [main] - Tomcat initialized with port(s): 8083 (http)
+2021-05-07 00:05:49 6035 [main] - Starting service [Tomcat]
+2021-05-07 00:05:49 6035 [main] - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-07 00:05:49 6035 [main] - Initializing Spring embedded WebApplicationContext
+2021-05-07 00:05:49 6035 [main] - Root WebApplicationContext: initialization completed in 1504 ms
+2021-05-07 00:05:50 6035 [main] - HikariPool-1 - Starting...
+2021-05-07 00:05:50 6035 [main] - HikariPool-1 - Start completed.
+2021-05-07 00:05:51 6035 [main] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 00:05:51 6035 [main] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-07 00:05:51 6035 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-07 00:05:52 6035 [main] - Tomcat started on port(s): 8083 (http) with context path ''
+2021-05-07 00:05:52 6035 [main] - Started CrudDemoApplication in 4.125 seconds (JVM running for 4.667)
+2021-05-07 00:05:02 6035 [http-nio-8083-exec-2] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-07 00:05:02 6035 [http-nio-8083-exec-2] - Initializing Servlet 'dispatcherServlet'
+2021-05-07 00:05:02 6035 [http-nio-8083-exec-2] - Completed initialization in 1 ms
+2021-05-07 00:05:02 6035 [http-nio-8083-exec-2] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 00:05:02 6035 [http-nio-8083-exec-2] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.just.cruddemo.Controller.CustomerResource.addCustomerDetails(CustomerResource.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-05-07 00:05:46 6035 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-07 00:05:46 6035 [SpringContextShutdownHook] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 00:05:46 6035 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2021-05-07 00:05:46 6035 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.
+2021-05-07 00:05:52 6051 [main] - Starting CrudDemoApplication using Java 1.8.0_202 on IXED-SJRMAC007 with PID 6051 (/Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo/target/classes started by harshavardhan.reddy in /Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo)
+2021-05-07 00:05:52 6051 [main] - No active profile set, falling back to default profiles: default
+2021-05-07 00:05:53 6051 [main] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-07 00:05:53 6051 [main] - Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+2021-05-07 00:05:54 6051 [main] - Tomcat initialized with port(s): 8083 (http)
+2021-05-07 00:05:54 6051 [main] - Starting service [Tomcat]
+2021-05-07 00:05:54 6051 [main] - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-07 00:05:54 6051 [main] - Initializing Spring embedded WebApplicationContext
+2021-05-07 00:05:54 6051 [main] - Root WebApplicationContext: initialization completed in 1479 ms
+2021-05-07 00:05:54 6051 [main] - HikariPool-1 - Starting...
+2021-05-07 00:05:54 6051 [main] - HikariPool-1 - Start completed.
+2021-05-07 00:05:55 6051 [main] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 00:05:55 6051 [main] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-07 00:05:56 6051 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-07 00:05:56 6051 [main] - Tomcat started on port(s): 8083 (http) with context path ''
+2021-05-07 00:05:56 6051 [main] - Started CrudDemoApplication in 4.021 seconds (JVM running for 4.537)
+2021-05-07 00:05:02 6051 [http-nio-8083-exec-1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-07 00:05:02 6051 [http-nio-8083-exec-1] - Initializing Servlet 'dispatcherServlet'
+2021-05-07 00:05:02 6051 [http-nio-8083-exec-1] - Completed initialization in 7 ms
+2021-05-07 00:05:03 6051 [http-nio-8083-exec-1] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 00:05:03 6051 [http-nio-8083-exec-1] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.just.cruddemo.Controller.CustomerResource.addCustomerDetails(CustomerResource.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-05-07 00:05:47 6051 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-07 00:05:47 6051 [SpringContextShutdownHook] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 00:05:47 6051 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2021-05-07 00:05:47 6051 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.
+2021-05-07 00:05:58 6061 [main] - Starting CrudDemoApplication using Java 1.8.0_202 on IXED-SJRMAC007 with PID 6061 (/Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo/target/classes started by harshavardhan.reddy in /Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo)
+2021-05-07 00:05:58 6061 [main] - No active profile set, falling back to default profiles: default
+2021-05-07 00:05:58 6061 [main] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-07 00:05:58 6061 [main] - Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interfaces.
+2021-05-07 00:05:59 6061 [main] - Tomcat initialized with port(s): 8083 (http)
+2021-05-07 00:05:59 6061 [main] - Starting service [Tomcat]
+2021-05-07 00:05:59 6061 [main] - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-07 00:05:59 6061 [main] - Initializing Spring embedded WebApplicationContext
+2021-05-07 00:05:59 6061 [main] - Root WebApplicationContext: initialization completed in 1402 ms
+2021-05-07 00:05:00 6061 [main] - HikariPool-1 - Starting...
+2021-05-07 00:05:00 6061 [main] - HikariPool-1 - Start completed.
+2021-05-07 00:05:00 6061 [main] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 00:05:01 6061 [main] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-07 00:05:01 6061 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-07 00:05:01 6061 [main] - Tomcat started on port(s): 8083 (http) with context path ''
+2021-05-07 00:05:01 6061 [main] - Started CrudDemoApplication in 3.952 seconds (JVM running for 4.542)
+2021-05-07 00:05:11 6061 [http-nio-8083-exec-1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-07 00:05:11 6061 [http-nio-8083-exec-1] - Initializing Servlet 'dispatcherServlet'
+2021-05-07 00:05:11 6061 [http-nio-8083-exec-1] - Completed initialization in 2 ms
+2021-05-07 00:05:21 6061 [http-nio-8083-exec-5] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 00:05:21 6061 [http-nio-8083-exec-5] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.just.cruddemo.Controller.CustomerResource.addCustomerDetails(CustomerResource.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-05-07 00:05:14 6061 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-07 00:05:14 6061 [SpringContextShutdownHook] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 00:05:15 6061 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2021-05-07 00:05:15 6061 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.
+2021-05-07 08:05:56 834 [main] - Starting CrudDemoApplication using Java 1.8.0_202 on IXED-SJRMAC007 with PID 834 (/Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo/target/classes started by harshavardhan.reddy in /Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo)
+2021-05-07 08:05:56 834 [main] - No active profile set, falling back to default profiles: default
+2021-05-07 08:05:57 834 [main] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-07 08:05:57 834 [main] - Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+2021-05-07 08:05:58 834 [main] - Tomcat initialized with port(s): 8083 (http)
+2021-05-07 08:05:58 834 [main] - Starting service [Tomcat]
+2021-05-07 08:05:58 834 [main] - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-07 08:05:58 834 [main] - Initializing Spring embedded WebApplicationContext
+2021-05-07 08:05:58 834 [main] - Root WebApplicationContext: initialization completed in 1626 ms
+2021-05-07 08:05:59 834 [main] - HikariPool-1 - Starting...
+2021-05-07 08:05:59 834 [main] - HikariPool-1 - Start completed.
+2021-05-07 08:05:00 834 [main] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 08:05:00 834 [main] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-07 08:05:00 834 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-07 08:05:00 834 [main] - Tomcat started on port(s): 8083 (http) with context path ''
+2021-05-07 08:05:00 834 [main] - Started CrudDemoApplication in 4.528 seconds (JVM running for 5.128)
+2021-05-07 08:05:58 834 [http-nio-8083-exec-2] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-07 08:05:58 834 [http-nio-8083-exec-2] - Initializing Servlet 'dispatcherServlet'
+2021-05-07 08:05:58 834 [http-nio-8083-exec-2] - Completed initialization in 2 ms
+2021-05-07 08:05:58 834 [http-nio-8083-exec-2] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 08:05:58 834 [http-nio-8083-exec-2] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.just.cruddemo.Controller.CustomerResource.addCustomerDetails(CustomerResource.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-05-07 08:05:12 834 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-07 08:05:12 834 [SpringContextShutdownHook] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 08:05:12 834 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2021-05-07 08:05:12 834 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.
+2021-05-07 08:05:22 943 [main] - Starting CrudDemoApplication using Java 1.8.0_202 on IXED-SJRMAC007 with PID 943 (/Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo/target/classes started by harshavardhan.reddy in /Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo)
+2021-05-07 08:05:22 943 [main] - No active profile set, falling back to default profiles: default
+2021-05-07 08:05:22 943 [main] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-07 08:05:23 943 [main] - Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+2021-05-07 08:05:23 943 [main] - Tomcat initialized with port(s): 8083 (http)
+2021-05-07 08:05:23 943 [main] - Starting service [Tomcat]
+2021-05-07 08:05:23 943 [main] - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-07 08:05:23 943 [main] - Initializing Spring embedded WebApplicationContext
+2021-05-07 08:05:23 943 [main] - Root WebApplicationContext: initialization completed in 1452 ms
+2021-05-07 08:05:24 943 [main] - HikariPool-1 - Starting...
+2021-05-07 08:05:24 943 [main] - HikariPool-1 - Start completed.
+2021-05-07 08:05:25 943 [main] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 08:05:25 943 [main] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-07 08:05:25 943 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-07 08:05:25 943 [main] - Tomcat started on port(s): 8083 (http) with context path ''
+2021-05-07 08:05:25 943 [main] - Started CrudDemoApplication in 4.063 seconds (JVM running for 4.597)
+2021-05-07 08:05:28 943 [http-nio-8083-exec-2] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-07 08:05:28 943 [http-nio-8083-exec-2] - Initializing Servlet 'dispatcherServlet'
+2021-05-07 08:05:28 943 [http-nio-8083-exec-2] - Completed initialization in 5 ms
+2021-05-07 08:05:28 943 [http-nio-8083-exec-2] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 08:05:28 943 [http-nio-8083-exec-2] - Entered into service adddetails metho
+2021-05-07 08:05:03 943 [http-nio-8083-exec-5] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 08:05:03 943 [http-nio-8083-exec-5] - Entered into service adddetails metho
+2021-05-07 08:05:56 943 [http-nio-8083-exec-8] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `double` from String "harsha": not a valid Double value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `double` from String "harsha": not a valid Double value
+ at [Source: (PushbackInputStream); line: 2, column: 8] (through reference chain: com.just.cruddemo.models.Customer["age"])]
+2021-05-07 08:05:54 943 [http-nio-8083-exec-10] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 08:05:54 943 [http-nio-8083-exec-10] - Entered into service adddetails metho
+2021-05-07 12:05:49 943 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-07 12:05:49 943 [SpringContextShutdownHook] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 12:05:49 943 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2021-05-07 12:05:49 943 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.
+2021-05-07 12:05:55 1503 [main] - Starting CrudDemoApplication using Java 1.8.0_202 on IXED-SJRMAC007 with PID 1503 (/Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo/target/classes started by harshavardhan.reddy in /Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo)
+2021-05-07 12:05:56 1503 [main] - No active profile set, falling back to default profiles: default
+2021-05-07 12:05:56 1503 [main] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-07 12:05:56 1503 [main] - Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2021-05-07 12:05:57 1503 [main] - Tomcat initialized with port(s): 8083 (http)
+2021-05-07 12:05:57 1503 [main] - Starting service [Tomcat]
+2021-05-07 12:05:57 1503 [main] - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-07 12:05:57 1503 [main] - Initializing Spring embedded WebApplicationContext
+2021-05-07 12:05:57 1503 [main] - Root WebApplicationContext: initialization completed in 1506 ms
+2021-05-07 12:05:58 1503 [main] - HikariPool-1 - Starting...
+2021-05-07 12:05:58 1503 [main] - HikariPool-1 - Start completed.
+2021-05-07 12:05:58 1503 [main] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 12:05:59 1503 [main] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-07 12:05:59 1503 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-07 12:05:59 1503 [main] - Tomcat started on port(s): 8083 (http) with context path ''
+2021-05-07 12:05:59 1503 [main] - Started CrudDemoApplication in 4.257 seconds (JVM running for 4.732)
+2021-05-07 12:05:09 1503 [http-nio-8083-exec-2] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-07 12:05:09 1503 [http-nio-8083-exec-2] - Initializing Servlet 'dispatcherServlet'
+2021-05-07 12:05:09 1503 [http-nio-8083-exec-2] - Completed initialization in 1 ms
+2021-05-07 12:05:09 1503 [http-nio-8083-exec-2] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 12:05:09 1503 [http-nio-8083-exec-2] - Entered into service adddetails method
+2021-05-07 12:05:22 1503 [http-nio-8083-exec-3] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 12:05:22 1503 [http-nio-8083-exec-3] - Entered into service adddetails method
+2021-05-07 12:05:34 1503 [http-nio-8083-exec-4] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 12:05:34 1503 [http-nio-8083-exec-4] - Entered into service adddetails method
+2021-05-07 12:05:42 1503 [http-nio-8083-exec-5] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 12:05:42 1503 [http-nio-8083-exec-5] - Entered into service adddetails method
+2021-05-07 12:05:44 1503 [http-nio-8083-exec-6] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 12:05:44 1503 [http-nio-8083-exec-6] - Entered into service adddetails method
+2021-05-07 14:05:52 1503 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-07 14:05:52 1503 [SpringContextShutdownHook] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 14:05:52 1503 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2021-05-07 14:05:52 1503 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.
+2021-05-07 14:05:51 2029 [main] - Starting CrudDemoApplication using Java 1.8.0_202 on IXED-SJRMAC007 with PID 2029 (/Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo/target/classes started by harshavardhan.reddy in /Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo)
+2021-05-07 14:05:51 2029 [main] - No active profile set, falling back to default profiles: default
+2021-05-07 14:05:52 2029 [main] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-07 14:05:52 2029 [main] - Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaces.
+2021-05-07 14:05:53 2029 [main] - Tomcat initialized with port(s): 8083 (http)
+2021-05-07 14:05:53 2029 [main] - Starting service [Tomcat]
+2021-05-07 14:05:53 2029 [main] - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-07 14:05:53 2029 [main] - Initializing Spring embedded WebApplicationContext
+2021-05-07 14:05:53 2029 [main] - Root WebApplicationContext: initialization completed in 1535 ms
+2021-05-07 14:05:53 2029 [main] - HikariPool-1 - Starting...
+2021-05-07 14:05:53 2029 [main] - HikariPool-1 - Start completed.
+2021-05-07 14:05:54 2029 [main] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 14:05:54 2029 [main] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-07 14:05:55 2029 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-07 14:05:55 2029 [main] - Tomcat started on port(s): 8083 (http) with context path ''
+2021-05-07 14:05:55 2029 [main] - Started CrudDemoApplication in 4.353 seconds (JVM running for 4.811)
+2021-05-07 14:05:01 2029 [http-nio-8083-exec-2] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-07 14:05:01 2029 [http-nio-8083-exec-2] - Initializing Servlet 'dispatcherServlet'
+2021-05-07 14:05:01 2029 [http-nio-8083-exec-2] - Completed initialization in 1 ms
+2021-05-07 14:05:01 2029 [http-nio-8083-exec-2] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 14:05:01 2029 [http-nio-8083-exec-2] - Entered into service adddetails method
+2021-05-07 14:05:08 2029 [http-nio-8083-exec-3] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 14:05:08 2029 [http-nio-8083-exec-3] - Entered into service adddetails method
+2021-05-07 14:05:22 2029 [http-nio-8083-exec-4] - ****** Entered Customercontroller to get the data for a particular ID from Database *******
+2021-05-07 14:05:50 2029 [http-nio-8083-exec-5] - ****** Entered Customercontroller to get the data for a particular ID from Database *******
+2021-05-07 14:05:50 2029 [http-nio-8083-exec-5] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.NoSuchElementException: No value present] with root cause
+java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Optional.java:135)
+	at com.just.cruddemo.Controller.CustomerResource.getCustomerByNumber(CustomerResource.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-05-07 14:05:15 2029 [http-nio-8083-exec-7] - ****** Entered Customercontroller to get the data for a particular ID from Database *******
+2021-05-07 14:05:15 2029 [http-nio-8083-exec-7] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.NoSuchElementException: No value present] with root cause
+java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Optional.java:135)
+	at com.just.cruddemo.Controller.CustomerResource.getCustomerByNumber(CustomerResource.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-05-07 14:05:19 2029 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-07 14:05:19 2029 [SpringContextShutdownHook] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 14:05:19 2029 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2021-05-07 14:05:19 2029 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.
+2021-05-07 14:05:26 2057 [main] - Starting CrudDemoApplication using Java 1.8.0_202 on IXED-SJRMAC007 with PID 2057 (/Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo/target/classes started by harshavardhan.reddy in /Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo)
+2021-05-07 14:05:26 2057 [main] - No active profile set, falling back to default profiles: default
+2021-05-07 14:05:27 2057 [main] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-07 14:05:27 2057 [main] - Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+2021-05-07 14:05:27 2057 [main] - Tomcat initialized with port(s): 8083 (http)
+2021-05-07 14:05:27 2057 [main] - Starting service [Tomcat]
+2021-05-07 14:05:27 2057 [main] - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-07 14:05:28 2057 [main] - Initializing Spring embedded WebApplicationContext
+2021-05-07 14:05:28 2057 [main] - Root WebApplicationContext: initialization completed in 1464 ms
+2021-05-07 14:05:28 2057 [main] - HikariPool-1 - Starting...
+2021-05-07 14:05:28 2057 [main] - HikariPool-1 - Start completed.
+2021-05-07 14:05:29 2057 [main] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 14:05:29 2057 [main] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-07 14:05:29 2057 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-07 14:05:30 2057 [main] - Tomcat started on port(s): 8083 (http) with context path ''
+2021-05-07 14:05:30 2057 [main] - Started CrudDemoApplication in 4.194 seconds (JVM running for 4.617)
+2021-05-07 14:05:38 2057 [http-nio-8083-exec-1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-07 14:05:38 2057 [http-nio-8083-exec-1] - Initializing Servlet 'dispatcherServlet'
+2021-05-07 14:05:38 2057 [http-nio-8083-exec-1] - Completed initialization in 1 ms
+2021-05-07 14:05:38 2057 [http-nio-8083-exec-1] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-07 14:05:47 2057 [http-nio-8083-exec-3] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 14:05:47 2057 [http-nio-8083-exec-3] - Entered into service adddetails method
+2021-05-07 14:05:53 2057 [http-nio-8083-exec-4] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 14:05:53 2057 [http-nio-8083-exec-4] - Entered into service adddetails method
+2021-05-07 14:05:55 2057 [http-nio-8083-exec-5] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 14:05:55 2057 [http-nio-8083-exec-5] - Entered into service adddetails method
+2021-05-07 14:05:04 2057 [http-nio-8083-exec-6] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 14:05:04 2057 [http-nio-8083-exec-6] - Entered into service adddetails method
+2021-05-07 14:05:11 2057 [http-nio-8083-exec-7] - ****** Entered Customercontroller to get the data for a particular ID from Database *******
+2021-05-07 14:05:15 2057 [http-nio-8083-exec-8] - ****** Entered Customercontroller to get the data for a particular ID from Database *******
+2021-05-07 15:05:36 2057 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-07 15:05:36 2057 [SpringContextShutdownHook] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 15:05:36 2057 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2021-05-07 15:05:36 2057 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.
+2021-05-07 15:05:03 2606 [main] - Starting CrudDemoApplication using Java 1.8.0_202 on IXED-SJRMAC007 with PID 2606 (/Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo/target/classes started by harshavardhan.reddy in /Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo)
+2021-05-07 15:05:03 2606 [main] - No active profile set, falling back to default profiles: default
+2021-05-07 15:05:04 2606 [main] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-07 15:05:04 2606 [main] - Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.
+2021-05-07 15:05:05 2606 [main] - Tomcat initialized with port(s): 8083 (http)
+2021-05-07 15:05:05 2606 [main] - Starting service [Tomcat]
+2021-05-07 15:05:05 2606 [main] - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-07 15:05:05 2606 [main] - Initializing Spring embedded WebApplicationContext
+2021-05-07 15:05:05 2606 [main] - Root WebApplicationContext: initialization completed in 1596 ms
+2021-05-07 15:05:05 2606 [main] - HikariPool-1 - Starting...
+2021-05-07 15:05:06 2606 [main] - HikariPool-1 - Start completed.
+2021-05-07 15:05:06 2606 [main] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 15:05:07 2606 [main] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-07 15:05:07 2606 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-07 15:05:07 2606 [main] - Tomcat started on port(s): 8083 (http) with context path ''
+2021-05-07 15:05:07 2606 [main] - Started CrudDemoApplication in 6.639 seconds (JVM running for 7.14)
+2021-05-07 15:05:32 2606 [http-nio-8083-exec-2] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-07 15:05:32 2606 [http-nio-8083-exec-2] - Initializing Servlet 'dispatcherServlet'
+2021-05-07 15:05:32 2606 [http-nio-8083-exec-2] - Completed initialization in 1 ms
+2021-05-07 15:05:32 2606 [http-nio-8083-exec-2] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 15:05:32 2606 [http-nio-8083-exec-2] - Entered into service adddetails method
+2021-05-07 15:05:40 2606 [http-nio-8083-exec-3] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 15:05:40 2606 [http-nio-8083-exec-3] - Entered into service adddetails method
+2021-05-07 15:05:50 2606 [http-nio-8083-exec-4] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 15:05:50 2606 [http-nio-8083-exec-4] - Entered into service adddetails method
+2021-05-07 15:05:57 2606 [http-nio-8083-exec-5] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 15:05:57 2606 [http-nio-8083-exec-5] - Entered into service adddetails method
+2021-05-07 15:05:03 2606 [http-nio-8083-exec-6] - ****** Entered Customercontroller to get the data for a particular ID from Database *******
+2021-05-07 15:05:10 2606 [http-nio-8083-exec-7] - ****** Entered Customercontroller to get the data for a particular ID from Database *******
+2021-05-07 15:05:45 2606 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-07 15:05:45 2606 [SpringContextShutdownHook] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 15:05:45 2606 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2021-05-07 15:05:45 2606 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.
+2021-05-07 15:05:54 2649 [main] - Starting CrudDemoApplication using Java 1.8.0_202 on IXED-SJRMAC007 with PID 2649 (/Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo/target/classes started by harshavardhan.reddy in /Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo)
+2021-05-07 15:05:54 2649 [main] - No active profile set, falling back to default profiles: default
+2021-05-07 15:05:55 2649 [main] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-07 15:05:55 2649 [main] - Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+2021-05-07 15:05:55 2649 [main] - Tomcat initialized with port(s): 8083 (http)
+2021-05-07 15:05:55 2649 [main] - Starting service [Tomcat]
+2021-05-07 15:05:55 2649 [main] - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-07 15:05:56 2649 [main] - Initializing Spring embedded WebApplicationContext
+2021-05-07 15:05:56 2649 [main] - Root WebApplicationContext: initialization completed in 1519 ms
+2021-05-07 15:05:56 2649 [main] - HikariPool-1 - Starting...
+2021-05-07 15:05:56 2649 [main] - HikariPool-1 - Start completed.
+2021-05-07 15:05:57 2649 [main] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 15:05:57 2649 [main] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-07 15:05:58 2649 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-07 15:05:58 2649 [main] - Tomcat started on port(s): 8083 (http) with context path ''
+2021-05-07 15:05:58 2649 [main] - Started CrudDemoApplication in 4.29 seconds (JVM running for 4.773)
+2021-05-07 15:05:03 2649 [http-nio-8083-exec-2] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-07 15:05:03 2649 [http-nio-8083-exec-2] - Initializing Servlet 'dispatcherServlet'
+2021-05-07 15:05:03 2649 [http-nio-8083-exec-2] - Completed initialization in 2 ms
+2021-05-07 15:05:03 2649 [http-nio-8083-exec-2] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 15:05:03 2649 [http-nio-8083-exec-2] - Entered into service adddetails method
+2021-05-07 15:05:08 2649 [http-nio-8083-exec-3] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 15:05:08 2649 [http-nio-8083-exec-3] - Entered into service adddetails method
+2021-05-07 15:05:14 2649 [http-nio-8083-exec-4] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 15:05:14 2649 [http-nio-8083-exec-4] - Entered into service adddetails method
+2021-05-07 15:05:19 2649 [http-nio-8083-exec-5] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 15:05:19 2649 [http-nio-8083-exec-5] - Entered into service adddetails method
+2021-05-07 15:05:24 2649 [http-nio-8083-exec-6] - ****** Entered Customercontroller to get the data for a particular ID from Database *******
+2021-05-07 15:05:27 2649 [http-nio-8083-exec-7] - ****** Entered Customercontroller to get complete from Database *******
+2021-05-07 16:05:18 2649 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-07 16:05:18 2649 [SpringContextShutdownHook] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 16:05:18 2649 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2021-05-07 16:05:18 2649 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.
+2021-05-07 16:05:28 2912 [main] - Starting CrudDemoApplication using Java 1.8.0_202 on IXED-SJRMAC007 with PID 2912 (/Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo/target/classes started by harshavardhan.reddy in /Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo)
+2021-05-07 16:05:28 2912 [main] - No active profile set, falling back to default profiles: default
+2021-05-07 16:05:28 2912 [main] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-07 16:05:28 2912 [main] - Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interfaces.
+2021-05-07 16:05:29 2912 [main] - Tomcat initialized with port(s): 8083 (http)
+2021-05-07 16:05:29 2912 [main] - Starting service [Tomcat]
+2021-05-07 16:05:29 2912 [main] - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-07 16:05:29 2912 [main] - Initializing Spring embedded WebApplicationContext
+2021-05-07 16:05:29 2912 [main] - Root WebApplicationContext: initialization completed in 1432 ms
+2021-05-07 16:05:30 2912 [main] - HikariPool-1 - Starting...
+2021-05-07 16:05:30 2912 [main] - HikariPool-1 - Start completed.
+2021-05-07 16:05:30 2912 [main] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 16:05:31 2912 [main] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-07 16:05:31 2912 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-07 16:05:31 2912 [main] - Tomcat started on port(s): 8083 (http) with context path ''
+2021-05-07 16:05:31 2912 [main] - Started CrudDemoApplication in 4.23 seconds (JVM running for 4.7)
+2021-05-07 16:05:36 2912 [http-nio-8083-exec-2] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-07 16:05:36 2912 [http-nio-8083-exec-2] - Initializing Servlet 'dispatcherServlet'
+2021-05-07 16:05:36 2912 [http-nio-8083-exec-2] - Completed initialization in 5 ms
+2021-05-07 16:05:37 2912 [http-nio-8083-exec-2] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 16:05:37 2912 [http-nio-8083-exec-2] - Entered into service adddetails method
+2021-05-07 16:05:42 2912 [http-nio-8083-exec-3] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 16:05:42 2912 [http-nio-8083-exec-3] - Entered into service adddetails method
+2021-05-07 16:05:47 2912 [http-nio-8083-exec-4] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 16:05:47 2912 [http-nio-8083-exec-4] - Entered into service adddetails method
+2021-05-07 16:05:51 2912 [http-nio-8083-exec-5] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 16:05:51 2912 [http-nio-8083-exec-5] - Entered into service adddetails method
+2021-05-07 16:05:59 2912 [http-nio-8083-exec-6] - ****** Entered Customercontroller to get the data for a particular ID from Database *******
+2021-05-07 16:05:03 2912 [http-nio-8083-exec-7] - ****** Entered Customercontroller to get complete from Database *******
+2021-05-07 16:05:45 2912 [http-nio-8083-exec-8] - ****** Entered Customercontroller to update the data from Database *******
+2021-05-07 16:05:17 2912 [http-nio-8083-exec-9] - ****** Entered Customercontroller to update the data from Database *******
+2021-05-07 16:05:12 2912 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-07 16:05:12 2912 [SpringContextShutdownHook] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 16:05:12 2912 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2021-05-07 16:05:12 2912 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.
+2021-05-07 16:05:15 2967 [main] - Starting CrudDemoApplication using Java 1.8.0_202 on IXED-SJRMAC007 with PID 2967 (/Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo/target/classes started by harshavardhan.reddy in /Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo)
+2021-05-07 16:05:15 2967 [main] - No active profile set, falling back to default profiles: default
+2021-05-07 16:05:16 2967 [main] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-07 16:05:16 2967 [main] - Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaces.
+2021-05-07 16:05:16 2967 [main] - Tomcat initialized with port(s): 8083 (http)
+2021-05-07 16:05:16 2967 [main] - Starting service [Tomcat]
+2021-05-07 16:05:16 2967 [main] - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-07 16:05:16 2967 [main] - Initializing Spring embedded WebApplicationContext
+2021-05-07 16:05:16 2967 [main] - Root WebApplicationContext: initialization completed in 1518 ms
+2021-05-07 16:05:17 2967 [main] - HikariPool-1 - Starting...
+2021-05-07 16:05:17 2967 [main] - HikariPool-1 - Start completed.
+2021-05-07 16:05:18 2967 [main] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 16:05:18 2967 [main] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-07 16:05:18 2967 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-07 16:05:19 2967 [main] - Tomcat started on port(s): 8083 (http) with context path ''
+2021-05-07 16:05:19 2967 [main] - Started CrudDemoApplication in 4.293 seconds (JVM running for 4.74)
+2021-05-07 16:05:28 2967 [http-nio-8083-exec-1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-07 16:05:28 2967 [http-nio-8083-exec-1] - Initializing Servlet 'dispatcherServlet'
+2021-05-07 16:05:28 2967 [http-nio-8083-exec-1] - Completed initialization in 2 ms
+2021-05-07 16:05:28 2967 [http-nio-8083-exec-1] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 16:05:28 2967 [http-nio-8083-exec-1] - Entered into service adddetails method
+2021-05-07 16:05:33 2967 [http-nio-8083-exec-3] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 16:05:33 2967 [http-nio-8083-exec-3] - Entered into service adddetails method
+2021-05-07 16:05:37 2967 [http-nio-8083-exec-4] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 16:05:37 2967 [http-nio-8083-exec-4] - Entered into service adddetails method
+2021-05-07 16:05:41 2967 [http-nio-8083-exec-5] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 16:05:41 2967 [http-nio-8083-exec-5] - Entered into service adddetails method
+2021-05-07 16:05:46 2967 [http-nio-8083-exec-6] - ****** Entered Customercontroller to get the data for a particular ID from Database *******
+2021-05-07 16:05:55 2967 [http-nio-8083-exec-7] - ****** Entered Customercontroller to get complete from Database *******
+2021-05-07 16:05:17 2967 [http-nio-8083-exec-8] - ****** Entered Customercontroller to update the data from Database *******
+2021-05-07 16:05:16 2967 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-07 16:05:16 2967 [SpringContextShutdownHook] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 16:05:16 2967 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2021-05-07 16:05:16 2967 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.
+2021-05-07 16:05:24 2996 [main] - Starting CrudDemoApplication using Java 1.8.0_202 on IXED-SJRMAC007 with PID 2996 (/Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo/target/classes started by harshavardhan.reddy in /Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo)
+2021-05-07 16:05:24 2996 [main] - No active profile set, falling back to default profiles: default
+2021-05-07 16:05:25 2996 [main] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-07 16:05:25 2996 [main] - Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2021-05-07 16:05:25 2996 [main] - Tomcat initialized with port(s): 8083 (http)
+2021-05-07 16:05:25 2996 [main] - Starting service [Tomcat]
+2021-05-07 16:05:25 2996 [main] - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-07 16:05:25 2996 [main] - Initializing Spring embedded WebApplicationContext
+2021-05-07 16:05:25 2996 [main] - Root WebApplicationContext: initialization completed in 1412 ms
+2021-05-07 16:05:26 2996 [main] - HikariPool-1 - Starting...
+2021-05-07 16:05:26 2996 [main] - HikariPool-1 - Start completed.
+2021-05-07 16:05:27 2996 [main] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 16:05:27 2996 [main] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-07 16:05:27 2996 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-07 16:05:28 2996 [main] - Tomcat started on port(s): 8083 (http) with context path ''
+2021-05-07 16:05:28 2996 [main] - Started CrudDemoApplication in 4.103 seconds (JVM running for 4.635)
+2021-05-07 16:05:04 2996 [http-nio-8083-exec-1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-07 16:05:04 2996 [http-nio-8083-exec-1] - Initializing Servlet 'dispatcherServlet'
+2021-05-07 16:05:04 2996 [http-nio-8083-exec-1] - Completed initialization in 3 ms
+2021-05-07 16:05:04 2996 [http-nio-8083-exec-1] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-07 16:05:15 2996 [http-nio-8083-exec-3] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 16:05:15 2996 [http-nio-8083-exec-3] - Entered into service adddetails method
+2021-05-07 16:05:20 2996 [http-nio-8083-exec-4] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 16:05:20 2996 [http-nio-8083-exec-4] - Entered into service adddetails method
+2021-05-07 16:05:24 2996 [http-nio-8083-exec-5] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 16:05:24 2996 [http-nio-8083-exec-5] - Entered into service adddetails method
+2021-05-07 16:05:30 2996 [http-nio-8083-exec-6] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 16:05:30 2996 [http-nio-8083-exec-6] - Entered into service adddetails method
+2021-05-07 16:05:42 2996 [http-nio-8083-exec-7] - ****** Entered Customercontroller to get the data for a particular ID from Database *******
+2021-05-07 16:05:47 2996 [http-nio-8083-exec-8] - ****** Entered Customercontroller to get complete from Database *******
+2021-05-07 16:05:03 2996 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-07 16:05:03 2996 [SpringContextShutdownHook] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 16:05:03 2996 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2021-05-07 16:05:03 2996 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.
+2021-05-07 16:05:12 3110 [main] - Starting CrudDemoApplication using Java 1.8.0_202 on IXED-SJRMAC007 with PID 3110 (/Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo/target/classes started by harshavardhan.reddy in /Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo)
+2021-05-07 16:05:12 3110 [main] - No active profile set, falling back to default profiles: default
+2021-05-07 16:05:13 3110 [main] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-07 16:05:13 3110 [main] - Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2021-05-07 16:05:14 3110 [main] - Tomcat initialized with port(s): 8083 (http)
+2021-05-07 16:05:14 3110 [main] - Starting service [Tomcat]
+2021-05-07 16:05:14 3110 [main] - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-07 16:05:14 3110 [main] - Initializing Spring embedded WebApplicationContext
+2021-05-07 16:05:14 3110 [main] - Root WebApplicationContext: initialization completed in 1513 ms
+2021-05-07 16:05:14 3110 [main] - HikariPool-1 - Starting...
+2021-05-07 16:05:14 3110 [main] - HikariPool-1 - Start completed.
+2021-05-07 16:05:15 3110 [main] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 16:05:16 3110 [main] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-07 16:05:16 3110 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-07 16:05:16 3110 [main] - Tomcat started on port(s): 8083 (http) with context path ''
+2021-05-07 16:05:16 3110 [main] - Started CrudDemoApplication in 4.137 seconds (JVM running for 4.617)
+2021-05-07 16:05:28 3110 [http-nio-8083-exec-2] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-07 16:05:28 3110 [http-nio-8083-exec-2] - Initializing Servlet 'dispatcherServlet'
+2021-05-07 16:05:28 3110 [http-nio-8083-exec-2] - Completed initialization in 3 ms
+2021-05-07 16:05:28 3110 [http-nio-8083-exec-2] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 16:05:28 3110 [http-nio-8083-exec-2] - Entered into service adddetails method
+2021-05-07 16:05:33 3110 [http-nio-8083-exec-3] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 16:05:33 3110 [http-nio-8083-exec-3] - Entered into service adddetails method
+2021-05-07 16:05:37 3110 [http-nio-8083-exec-4] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 16:05:37 3110 [http-nio-8083-exec-4] - Entered into service adddetails method
+2021-05-07 16:05:44 3110 [http-nio-8083-exec-5] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 16:05:44 3110 [http-nio-8083-exec-5] - Entered into service adddetails method
+2021-05-07 16:05:52 3110 [http-nio-8083-exec-6] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 16:05:52 3110 [http-nio-8083-exec-6] - Entered into service adddetails method
+2021-05-07 16:05:03 3110 [http-nio-8083-exec-7] - ****** Entered Customercontroller to get the data for a particular ID from Database *******
+2021-05-07 16:05:07 3110 [http-nio-8083-exec-8] - ****** Entered Customercontroller to get complete from Database *******
+2021-05-07 16:05:29 3110 [http-nio-8083-exec-9] - ****** Entered Customercontroller to delete the data from Database *******
+2021-05-07 16:05:59 3110 [http-nio-8083-exec-10] - ****** Entered Customercontroller to update the data from Database *******
+2021-05-07 16:05:17 3110 [http-nio-8083-exec-1] - ****** Entered Customercontroller to update the data from Database *******
+2021-05-07 16:05:31 3110 [http-nio-8083-exec-2] - ****** Entered Customercontroller to update the data from Database *******
+2021-05-07 16:05:11 3110 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-07 16:05:11 3110 [SpringContextShutdownHook] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 16:05:11 3110 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2021-05-07 16:05:11 3110 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.
+2021-05-07 16:05:21 3144 [main] - Starting CrudDemoApplication using Java 1.8.0_202 on IXED-SJRMAC007 with PID 3144 (/Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo/target/classes started by harshavardhan.reddy in /Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo)
+2021-05-07 16:05:21 3144 [main] - No active profile set, falling back to default profiles: default
+2021-05-07 16:05:22 3144 [main] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-07 16:05:22 3144 [main] - Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+2021-05-07 16:05:22 3144 [main] - Tomcat initialized with port(s): 8083 (http)
+2021-05-07 16:05:22 3144 [main] - Starting service [Tomcat]
+2021-05-07 16:05:22 3144 [main] - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-07 16:05:22 3144 [main] - Initializing Spring embedded WebApplicationContext
+2021-05-07 16:05:22 3144 [main] - Root WebApplicationContext: initialization completed in 1528 ms
+2021-05-07 16:05:23 3144 [main] - HikariPool-1 - Starting...
+2021-05-07 16:05:23 3144 [main] - HikariPool-1 - Start completed.
+2021-05-07 16:05:24 3144 [main] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 16:05:24 3144 [main] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-07 16:05:24 3144 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-07 16:05:25 3144 [main] - Tomcat started on port(s): 8083 (http) with context path ''
+2021-05-07 16:05:25 3144 [main] - Started CrudDemoApplication in 4.24 seconds (JVM running for 4.759)
+2021-05-07 16:05:34 3144 [http-nio-8083-exec-2] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-07 16:05:34 3144 [http-nio-8083-exec-2] - Initializing Servlet 'dispatcherServlet'
+2021-05-07 16:05:34 3144 [http-nio-8083-exec-2] - Completed initialization in 1 ms
+2021-05-07 16:05:34 3144 [http-nio-8083-exec-2] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 16:05:34 3144 [http-nio-8083-exec-2] - Entered into service adddetails method
+2021-05-07 16:05:38 3144 [http-nio-8083-exec-3] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 16:05:38 3144 [http-nio-8083-exec-3] - Entered into service adddetails method
+2021-05-07 16:05:41 3144 [http-nio-8083-exec-4] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 16:05:41 3144 [http-nio-8083-exec-4] - Entered into service adddetails method
+2021-05-07 16:05:46 3144 [http-nio-8083-exec-5] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 16:05:46 3144 [http-nio-8083-exec-5] - Entered into service adddetails method
+2021-05-07 16:05:50 3144 [http-nio-8083-exec-6] - ****** Entered Customercontroller to get complete from Database *******
+2021-05-07 16:05:12 3144 [http-nio-8083-exec-7] - ****** Entered Customercontroller to update the data from Database *******
+2021-05-07 16:05:26 3144 [http-nio-8083-exec-8] - ****** Entered Customercontroller to update the data from Database *******
+2021-05-07 16:05:38 3144 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-07 16:05:38 3144 [SpringContextShutdownHook] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 16:05:38 3144 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2021-05-07 16:05:38 3144 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.
+2021-05-07 16:05:17 3188 [main] - Starting CrudDemoApplication using Java 1.8.0_202 on IXED-SJRMAC007 with PID 3188 (/Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo/target/classes started by harshavardhan.reddy in /Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo)
+2021-05-07 16:05:17 3188 [main] - No active profile set, falling back to default profiles: default
+2021-05-07 16:05:17 3188 [main] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-07 16:05:17 3188 [main] - Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+2021-05-07 16:05:18 3188 [main] - Tomcat initialized with port(s): 8083 (http)
+2021-05-07 16:05:18 3188 [main] - Starting service [Tomcat]
+2021-05-07 16:05:18 3188 [main] - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-07 16:05:18 3188 [main] - Initializing Spring embedded WebApplicationContext
+2021-05-07 16:05:18 3188 [main] - Root WebApplicationContext: initialization completed in 1418 ms
+2021-05-07 16:05:19 3188 [main] - HikariPool-1 - Starting...
+2021-05-07 16:05:19 3188 [main] - HikariPool-1 - Start completed.
+2021-05-07 16:05:19 3188 [main] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 16:05:20 3188 [main] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-07 16:05:20 3188 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-07 16:05:20 3188 [main] - Tomcat started on port(s): 8083 (http) with context path ''
+2021-05-07 16:05:20 3188 [main] - Started CrudDemoApplication in 4.068 seconds (JVM running for 4.555)
+2021-05-07 16:05:29 3188 [http-nio-8083-exec-1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-07 16:05:29 3188 [http-nio-8083-exec-1] - Initializing Servlet 'dispatcherServlet'
+2021-05-07 16:05:29 3188 [http-nio-8083-exec-1] - Completed initialization in 7 ms
+2021-05-07 16:05:29 3188 [http-nio-8083-exec-1] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 16:05:29 3188 [http-nio-8083-exec-1] - Entered into service adddetails method
+2021-05-07 16:05:33 3188 [http-nio-8083-exec-3] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 16:05:33 3188 [http-nio-8083-exec-3] - Entered into service adddetails method
+2021-05-07 16:05:36 3188 [http-nio-8083-exec-4] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 16:05:36 3188 [http-nio-8083-exec-4] - Entered into service adddetails method
+2021-05-07 16:05:39 3188 [http-nio-8083-exec-5] - ****** Entered Customercontroller to Save the data into Database *******
+2021-05-07 16:05:39 3188 [http-nio-8083-exec-5] - Entered into service adddetails method
+2021-05-07 16:05:43 3188 [http-nio-8083-exec-6] - ****** Entered Customercontroller to get complete from Database *******
+2021-05-07 16:05:07 3188 [http-nio-8083-exec-7] - ****** Entered Customercontroller to update the data from Database *******
+2021-05-07 16:05:20 3188 [http-nio-8083-exec-8] - ****** Entered Customercontroller to delete the data from Database *******
+2021-05-07 16:05:24 3188 [http-nio-8083-exec-9] - ****** Entered Customercontroller to get complete from Database *******
+2021-05-07 16:05:35 3188 [http-nio-8083-exec-10] - ****** Entered Customercontroller to get the data for a particular ID from Database *******
+2021-05-07 16:05:45 3188 [http-nio-8083-exec-1] - ****** Entered Customercontroller to update the data from Database *******
+2021-05-07 16:05:49 3188 [http-nio-8083-exec-4] - ****** Entered Customercontroller to delete the data from Database *******
+2021-05-07 17:05:43 3188 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m23s499ms).
+2021-05-07 18:05:37 3188 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m23s569ms).
+2021-05-07 18:05:01 3188 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m23s944ms).
+2021-05-07 18:05:54 3188 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m23s854ms).
+2021-05-07 19:05:48 3188 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m23s525ms).
+2021-05-07 19:05:14 3188 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m25s576ms).
+2021-05-07 19:05:04 3188 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-07 19:05:04 3188 [SpringContextShutdownHook] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 19:05:04 3188 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2021-05-07 19:05:04 3188 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.
+2021-05-07 19:05:09 3624 [main] - Starting CrudDemoApplication using Java 1.8.0_202 on IXED-SJRMAC007 with PID 3624 (/Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo/target/classes started by harshavardhan.reddy in /Users/harshavardhan.reddy/Documents/WorkSpacePermanent/crud-demo)
+2021-05-07 19:05:09 3624 [main] - No active profile set, falling back to default profiles: default
+2021-05-07 19:05:10 3624 [main] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-07 19:05:10 3624 [main] - Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+2021-05-07 19:05:11 3624 [main] - Tomcat initialized with port(s): 8083 (http)
+2021-05-07 19:05:11 3624 [main] - Starting service [Tomcat]
+2021-05-07 19:05:11 3624 [main] - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-07 19:05:11 3624 [main] - Initializing Spring embedded WebApplicationContext
+2021-05-07 19:05:11 3624 [main] - Root WebApplicationContext: initialization completed in 1415 ms
+2021-05-07 19:05:12 3624 [main] - HikariPool-1 - Starting...
+2021-05-07 19:05:12 3624 [main] - HikariPool-1 - Start completed.
+2021-05-07 19:05:12 3624 [main] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 19:05:13 3624 [main] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-07 19:05:13 3624 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-07 19:05:13 3624 [main] - Tomcat started on port(s): 8083 (http) with context path ''
+2021-05-07 19:05:13 3624 [main] - Started CrudDemoApplication in 4.206 seconds (JVM running for 4.701)
+2021-05-07 20:05:50 3624 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-07 20:05:50 3624 [SpringContextShutdownHook] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-07 20:05:50 3624 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2021-05-07 20:05:50 3624 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.
